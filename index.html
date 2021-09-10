@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"/>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+      
+        <table>
+
+           
+               <tr >
+               
+                <th style="border-bottom: 1px solid lightgray;background-color: rgb(241, 241, 241);"colspan="3">
+               
+                       <p style="margin: 5px;">Payment form example</p>
+                </th>
+               </tr>
+               <tr>
+                   <td colspan="3">
+                       <p style="padding: 10px;margin: 10px; border-radius: 3px; color: rgb(114, 0, 0); background-color: rgb(255, 221, 221); font-size: 13px; font-weight: bold; border: 1px solid rgb(114, 0, 0);">Some fields are missing.</p> 
+                   </td>
+               </tr>
+               
+               
+               
+                <tr >
+                    <td><label for="card">Card #</label><input style="width: 95%;" type="text" name="card" id="" placeholder="XXXXXXXXXXXXXXX">
+                    </td>
+                    <td><label for="cvc">CVC</label><input type="text" name="cvc" id="" placeholder="0000"></td>
+                    <td><label for="amount">Amount</label><input style="width: 90%;" type="text" name="amount" id="" placeholder="Amount"></td>
+                </tr>
+                <tr>
+                    <td style="width: 55%;"><label for="first">First Name</label><input style="width: 95%;" type="text" name="first" id=""></td>
+                    <td colspan="2" style="width: 44%;"><label for="last">Last Name</label><input style="width: 95%;" type="text" name="last" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label><input style="width: 95%;" type="text" name="city" id=""></td>
+                    <td><label for="state">State</label><select name="state" id="">
+                            <option hidden value="state">Pick A State</option>
+                            <option value="florida">Florida</option>
+                            <option value="new york">New York</option>
+                            <option value="california">California</option>
+                        </select></td>
+                    <td><label for="postal">Postal Code</label><input style="width: 90%;" type="number" name="postal" id=""></td>
+                </tr>
+                <tr >
+                    <td style="display: block;">
+                        <label style="margin-bottom: 10px;" for="accept">We accept:</label>
+                        <div  class="space">
+                            <input type="radio" name="accept" id=""><i class="fab fa-cc-mastercard"></i>
+                            <input type="radio" name="accept" id=""><i class="fab fa-cc-visa"></i>
+                            <input type="radio" name="accept" id=""><i class="fab fa-cc-paypal"></i>
+                            <input type="radio" name="accept" id=""><i class="fab fa-btc"></i>
+                        
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <label for="message">Message</label>
+                        <textarea style="width: 95%;" name="" id="" cols="10" rows="5"></textarea>
+                        <label style="color: gray; font-size: 12px;" for="message">Add any notes here.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-top: 1px solid lightgray; padding: 5px; background-color: rgb(241, 241, 241); " colspan="3">
+                        <div style="float: right;">
+                            <button class="first-btn">cancel</button>
+                            <button class="second-btn">Send</button>
+                        </div>
+                    </td>
+                </tr>
+               
+        </table>
+        <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+        
+    </form>
+
+</body>
+
+</html>
